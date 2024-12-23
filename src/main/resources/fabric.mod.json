@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lmao",
+	"version": "${version}",
+	"name": "Lmao",
+	"description": "Lmao",
+	"authors": [
+		"Spondle"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lmao/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.spondle.lmao.Lmao"
+		],
+		"fabric-datagen": [
+			"net.spondle.lmao.LmaoDataGenerator"
+		],
+		"client": [
+			"net.spondle.lmao.LmaoClient"
+		]
+	},
+	"mixins": [
+		"lmao.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
