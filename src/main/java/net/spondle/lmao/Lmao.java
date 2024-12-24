@@ -3,6 +3,7 @@ package net.spondle.lmao;
 import net.fabricmc.api.ModInitializer;
 
 
+import net.spondle.lmao.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,7 @@ public class Lmao implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}
